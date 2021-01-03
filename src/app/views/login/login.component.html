@@ -1,0 +1,49 @@
+<div class="login-page d-flex justify-content-center align-items-center">
+	<div class="wd-85">
+		<div class="col-md-8 offset-md-2">
+			<form [formGroup]="loginForm">
+				<div class="row">
+					<div class="col-md-12  bg-white">
+						<div class="field-area">
+							<!-- <img src="assets/logo.png" class="login-logo text-center"> -->
+							<h2 class="text-center uppercase mt-2 ft-weight-bold text-blue">Login</h2>
+							<div class="field-sec">
+								<em class="fas fa-user"></em>
+								<input type="text" name="username" class="form-control" formControlName="userName"
+									name="userName" placeholder="Username / Email" autocomplete="off"
+									[(ngModel)]="user.login">
+								<div
+									*ngIf="loginForm.controls.userName.errors  && (loginForm.controls.userName.dirty || loginForm.controls.userName.touched)">
+									<span *ngIf="loginForm.controls.userName.errors.required" class="error">
+										Please enter user name</span>
+								</div>
+							</div>
+
+							<div class="field-sec">
+								<em class="fas fa-lock"></em>
+								<input type="password" name="password" class="form-control" formControlName="password"
+									name="password" placeholder="Password" autocomplete="off"
+									[(ngModel)]="user.password">
+								<div
+									*ngIf="loginForm.controls.password.errors  && (loginForm.controls.password.dirty || loginForm.controls.password.touched)">
+									<span *ngIf="loginForm.controls.password.errors.required" class="error">
+										Please enter password</span>
+								</div>
+							</div>
+
+							<div class="field-sec text-center">
+								<u>Forgot password</u>
+							</div>
+
+							<div class="field-sec text-center">
+								<button class="bg-blue btn btn-primary uppercase  w-50 ft-weight-bold"
+									(click)="goToLogin()">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</div>

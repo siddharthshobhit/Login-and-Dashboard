@@ -1,0 +1,37 @@
+<app-header-title class="mt-4" [headerTitle]="tableTitle"></app-header-title>
+<div class="row mt-3">
+  <div class="col-md-12">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th *ngFor="let header of tableHeader; let i = index;">
+            {{header.label}}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor=" let item of tableData; let i= index;">
+
+          <td *ngFor=" let k of Arr(tableHeader.length); let j = index;">
+            <!-- <div *ngIf="j==0">
+              <label>
+                {{tableData[i][tableHeader[j].key]}}</label>
+            </div> -->
+            <div>
+              {{tableData[i][tableHeader[j].key]}}
+            </div>
+          </td>
+        </tr>
+        <tr *ngIf="tableData && tableData.length == 0">
+          <td [attr.colspan]="tableHeader.length" class="text-center">{{text}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- <div class=" col-md-12 form-group  text-right d-flex justify-content-end align-items-end">
+    <button type="button" class="btn btn-default mr-1">
+      <em class="fa fa-arrow-left"></em> Back</button>
+    <button type="button" class="btn btn-primary" (click)='addNewPartyCode()'>
+      <em class="fa fa-plus"></em> Add New </button>
+  </div> -->
+</div>

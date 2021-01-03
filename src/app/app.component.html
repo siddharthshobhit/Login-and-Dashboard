@@ -1,0 +1,8 @@
+<div class="page-wrapper chiller-theme toggled">
+    <app-header *ngIf="showHead"></app-header>
+    <app-side-bar *ngIf="showHead"></app-side-bar>
+    <router-outlet></router-outlet>
+</div>
+<ngx-spinner>
+    <p class="text-white" > Loading... </p>
+</ngx-spinner>

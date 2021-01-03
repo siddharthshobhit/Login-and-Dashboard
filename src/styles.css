@@ -1,0 +1,88 @@
+/*!
+ * Author:Vijay Gupta
+ * Copyright 2011-2019 Tech Mahindra
+ * Copyright Tech Mahindra, Inc.
+ */
+
+@import "src/custom/css/custom.css";
+@import "node_modules/ngx-toastr/toastr.css";
+
+body{
+    background-color: #e9e8e8 !important;
+   }
+
+.content {
+    background-color: #fff;
+    min-height: 81vh;
+    padding: 15px;
+}
+
+a.dropdown-item {
+    padding: 0.35rem 1.5rem;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a{
+    font-size: 14px;
+}
+
+.table td, .table th {
+    padding: 0.55rem .75rem !important;
+    font-size: 14px;
+}
+
+.btn-default:hover {
+    background-color: #e8e8e8 !important;
+}
+
+select{
+    padding: .375rem 0.45rem !important;
+}
+
+.list-group-item{
+    border: 0;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9 !important;
+    border-color: #0062cc !important;
+}
+
+h2.heading {
+    color: #007bff;
+}
+
+h2.heading:before {
+    width: 3px;
+    content: '';
+    background-color: #007bff;
+    position: absolute;
+    left: 0;
+    height: 20px;
+}
+
+.tab-content td .btn {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before{
+    display: none;
+}
+
+#toast-container > div {
+    opacity:1;
+}
+
+.error {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: red;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.ng-invalid.ng-dirty:not(form), .ng-invalid:not(form).form-submitted {
+    border: solid 2px lightcoral !important;
+  }

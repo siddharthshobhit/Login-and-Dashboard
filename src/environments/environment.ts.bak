@@ -1,0 +1,6 @@
+
+export const environment = {
+  production: false,
+  baseUrl : 'http://13.127.210.129:3571/webApi/'
+};
+

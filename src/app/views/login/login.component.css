@@ -1,0 +1,15 @@
+.bg-blue{
+    background-color: var(--bg-blue);
+  }
+
+.btn-primary{
+    font-family: 'Montserrat', sans-serif;
+    height: 52px;
+    border-radius: 25px;
+    border-color: var(--text-blue);
+    font-weight: 600;
+  }
+   
+.field-sec a{
+  font-size: 12px;
+}  

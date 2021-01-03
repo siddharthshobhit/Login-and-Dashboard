@@ -1,0 +1,17 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <ng-container *ngIf="count !== null">
+      <li class="breadcrumb-item">
+        <a href="javascript:void(0)" (click)="breadCrumbNav('Home')">
+          <span class="fa fa-home mr-1"></span>Home</a>
+      </li>
+    </ng-container>
+
+    <ng-container *ngFor="let breadLink of breadCrumb">
+      <li class="breadcrumb-item">
+        <a href="javascript:void(0)" (click)="breadCrumbNav(breadLink)">
+          <span class="fa fa-home mr-1" *ngIf="breadLink == 'Home'"></span>{{breadLink}}</a>
+      </li>
+    </ng-container>
+  </ol>
+</nav>
